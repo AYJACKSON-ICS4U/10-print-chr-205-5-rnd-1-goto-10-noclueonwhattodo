@@ -1,0 +1,33 @@
+var x = 0;
+var y = 0;
+
+
+
+function setup() {
+    
+    createCanvas( 400, 400 );
+    
+}
+
+function draw() {
+
+  
+  
+    if ( x === 400 ) {
+        y += 10;
+        x = 0;
+    
+    }
+    if( random(1) > 0.5 ) {
+
+         line( x, y, x + 10, y + 10 );
+        
+    }
+    else{
+        
+         line( x + 10, y, x + 10, y );
+        
+    }
+    
+      x += 10;
+}
